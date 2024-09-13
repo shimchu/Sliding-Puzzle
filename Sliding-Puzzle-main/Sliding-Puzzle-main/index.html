@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    
+    <title>Slider Puzzle Game</title>
+
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/pop ups.css">
+    <link rel="stylesheet" href="styles/general.css">
+</head>
+
+<body>
+
+    <div id = "puzzle-window">
+        
+        <div id = "puzzle-container"></div>
+        
+        <div id = "instructions-button-container">
+            <button class = "buttons purple-buttons" id = "instructions-button">
+                Instructions
+            </button>
+        </div>
+
+        <div id = "shuffle-button-container">
+            <button class = "buttons green-buttons" id = "shuffle-button">
+                Shuffle
+            </button>
+        </div> 
+
+        <div id = "start-here-button-container">
+            <button class = "buttons green-buttons" id = "start-here-button">
+                Start here
+            </button>
+        </div>
+        
+        <div id = "reset-button-container">
+            <button class = "buttons green-buttons" id = "reset-button">
+                Reset
+            </button>
+        </div> 
+
+        <div id = "solution-button-container">
+            <button class = "buttons blue-buttons" id = "solution-button">
+                Solution
+            </button>
+        </div>
+
+        <div id = "start-again-button-container">
+            <button class = "buttons green-buttons" id = "start-again-button">
+                Start again
+            </button>
+        </div>
+
+        <div id = "previous-button-container">
+            <button class = "buttons blue-buttons" id = "previous-button">
+                Previous state
+            </button>
+        </div>
+
+        <div id = "next-button-container">
+            <button class = "buttons blue-buttons" id = "next-button">
+                Next state
+            </button>
+        </div>
+
+        <div id = "user-info">
+            You've made <span class = "user-moves"></span> moves till now 
+            <br><br>
+            The solution takes less than 35 moves
+        </div>
+
+        <div id = "solution-info">
+            The solution takes <span class = "solution-moves"></span> moves
+            <br><br>
+            Move number: <span class = "move-number"></span>
+        </div>
+
+    </div>
+
+        
+    <div id = "instructions-pop-up">
+
+        <div class = "instructions-container">
+            <br>
+            <span class = "pop-up-headings">INSTRUCTIONS</span>
+            <br><br>
+            <span>See if you can solve the puzzle in the least number of moves.</span>
+            <br>
+            <span>In each move you can slide an adjacent tile into the empty place.</span>
+            <br>
+            <span>Use arrow keys to move the adjacent tiles.</span>
+            <br>
+            <ul style="list-style-type:disc; line-height: 250%;">
+                <li>Up arrow key : &nbsp; The tile below the empty space will slide upwards</li>
+                <li>Right arrow key: &nbsp;The tile to the left of the empty space will slide rightwards</li>
+                <li>Down arrow key: &nbsp;The tile above the empty space will slide downwards</li>
+                <li>Left arrow key: &nbsp; The tile to the right of the empty space will slide leftwards</li>
+            </ul> 
+            <br>
+        </div>
+        
+        <button class = "close-buttons" id = "instructions-close-button">
+            <img class = "close-icons" src="images/close-icon.JPG" alt="close button">
+        </button>
+        
+    </div>
+
+
+    <div id = "congrats-pop-up">
+        
+        <div id = 'congrats-container'>
+            <br><br>
+            <span class = "pop-up-headings">Congratulations!</span>
+            <br><br>
+            <span>You solved the puzzle.</span>
+            <br>
+            <span>It took you <span class = "congrats-user-moves"></span> moves.</span>
+            <br>
+            <span>The optimal solution takes <span class = "congrats-solution-moves"></span> moves.</span>
+            <br>
+            <span>See the solution or play again!</span>
+            <br>
+            <div id = "congrats-buttons-container">
+                
+                <button class = "buttons green-buttons" id = "play-again-button">
+                    Play again
+                </button>
+
+                <button class = "buttons blue-buttons" id = "congrats-solution-button">
+                    Solution
+                </button>
+    
+            </div>
+            <br>
+        </div>
+
+        <button class = "close-buttons" id = "congrats-close-button">
+            <img class = "close-icons" src="images/close-icon.JPG" alt="close button">
+        </button>
+    
+    </div>
+
+    <script>
+
+    </script>
+    <script type = "module" src = "js/main.js"></script>
+ 
+</body>
+</html>
